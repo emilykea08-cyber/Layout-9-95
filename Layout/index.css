@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header{
+    background-color: #cd5872;
+    padding: 20px;
+    text-align: center;    
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: pink;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #baffbe;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: #c7dad8;
+    color: rgb(255, 197, 197);
+}
+.footer{
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+}

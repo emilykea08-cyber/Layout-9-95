@@ -1,0 +1,358 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf5;
+    color: #493126;
+}
+
+/* NAVIGATION BAR */
+
+.topnav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #E5F4F4;
+    border-bottom: 3px solid #95D5D1;
+    width: 100%;
+}
+
+.topnav a {
+    display: block;
+    padding: 14px 20px;
+    color: #BF1E62;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: #F8B6BF;
+    color: #BF1E62;
+    border-bottom-color: #BF1E62;
+}
+
+/* HERO SECTION */
+
+.hero {
+    width: 100%;
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 10%;
+
+    background:
+        linear-gradient(
+            rgba(45, 30, 23, 0.45),
+            rgba(45, 30, 23, 0.45)
+        ),
+        url("pekalongan.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+/* HERO TITLE */
+
+.hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 85px;
+    line-height: 0.9;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: 0.4s ease;
+    color: white;
+}
+
+.hero h1 span {
+    color: #F8D7B5;
+}
+
+.hero h1:hover {
+    color: #823910;
+    transform: scale(1.06);
+}
+
+.hero h1:hover span {
+    color: white;
+}
+
+/* HERO TEXT */
+
+.hero-text {
+    max-width: 500px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* HERO BUTTON */
+
+.button {
+    display: inline-block;
+    padding: 13px 27px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #493126;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTENT CONTAINER */
+
+#content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 40px;
+}
+
+/* INTRO SECTION */
+
+.intro {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-label {
+    color: #9b6742;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.intro h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 20px 0 30px;
+}
+
+.intro h2 i {
+    color: #a06d45;
+}
+
+.intro > p:last-child {
+    text-align: justify;
+    text-indent: 45px;
+    line-height: 1.9;
+}
+
+/* IMAGE CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(70, 45, 25, 0.12);
+
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(70, 45, 25, 0.25);
+}
+
+/* CARD IMAGES */
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* CARD TEXT */
+
+.card-text {
+    padding: 25px 30px 30px;
+}
+
+.card-text span {
+    color: #b28655;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.card-text h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 31px;
+    margin: 8px 0;
+}
+
+.card-text p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7;
+}
+
+/* INFORMATION SECTIONS */
+
+.content {
+    max-width: 850px;
+    margin: 100px auto 0;
+}
+
+.content h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 46px;
+    margin: 15px 0 20px;
+}
+
+.content p:last-child {
+    text-align: justify;
+    text-indent: 45px;
+    line-height: 1.9;
+}
+
+/* FOOTER - OPTIONAL */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #E5F4F4;
+    border-top: 3px solid #95D5D1;
+    color: #BF1E62;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 550px;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    #content {
+        padding: 60px 25px;
+    }
+
+    .intro h2 {
+        font-size: 38px;
+    }
+
+    .content h2 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 40px 25px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .small-title {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    #content {
+        padding: 45px 20px;
+    }
+
+    .intro h2 {
+        font-size: 32px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .image-container img {
+        height: 250px;
+    }
+}
+.header {
+    background-color: #F8B6BF;
+    padding: 25px;
+    text-align: center;
+    color: #BF1E62;
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+}

@@ -1,0 +1,245 @@
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    background-color: rgb(255, 169, 193);
+    color:rgb(255, 247, 222);
+    text-align: center;
+}
+h1{
+    background-color: rgb(186, 252, 244);
+    color:mintcream;
+    text-align: center;
+}
+@font-face {
+    font-family: "AppleGaramond";
+    src: url(AppleGaramond.ttf);
+}
+body {
+    font-family: "AppleGaramond";
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(255, 232, 250);
+    color: rgb(97, 10, 45);
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid aquamarine; 
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transofrm 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.makanan{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+img{
+    padding: 10px;
+}
+div.fishnchips{
+    width: 250px;
+    height: 280px;
+    border-radius: 15px;
+    background-color: ivory;
+    box-shadow: 0 4px 8px 0 grey;
+    margin-bottom: 25px;
+}
+div.fishnchips:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.dubaichewy{
+    width: 250px;
+    height: 280px;
+    border-radius: 15px;
+    background-color: lightpink;
+    box-shadow: 0 4px 8px 0 grey;
+    margin-bottom: 25px;
+}
+div.dubaichewy:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.buldak{
+    width: 250px;
+    height: 280px;
+    border-radius: 15px;
+    background-color: lightcoral;
+    box-shadow: 0 4px 8px 0 grey;
+}
+div.buldak:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.pizza{
+    width: 250px;
+    height: 280px;
+    border-radius: 15px;
+    background-color: palevioletred;
+    box-shadow: 0 4px 8px 0 gray;
+}
+div.pizza:hover{
+  overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.movies{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+div.avengers{
+    width: 220px;
+    height: 340px;
+    text-align: center;
+    background-color: plum;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px gray;
+}
+div.avengers img{
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+div.avengers:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.avatar{
+    width: 220px;
+    height: 340px;
+    text-align: center;
+    background-color: azure;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px gray;
+}
+div.avatar img{
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+div.avatar:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.taltbilb{
+    width: 220px;
+    height: 340px;
+    text-align: center;
+    background-color: pink;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px gray;
+}
+div.taltbilb img{
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+div.taltbilb:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+div.batmitzvah{
+    width: 220px;
+    height: 340px;
+    text-align: center;
+    background-color:rgb(253, 255, 205);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+}
+div.batmitzvah img{
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+div.batmitzvah:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+.funfact {
+    text-align: center;
+    margin: 20px;
+}
+
+.funfact button {
+    background-color: pink;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.funfact button:hover {
+    transform: scale(1.1);
+}
+
+#fact {
+    font-size: 18px;
+    margin-top: 15px;
+}
